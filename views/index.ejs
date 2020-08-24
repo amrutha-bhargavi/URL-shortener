@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form action="/shortenURLs" method="POST" class="my-4 form-inline">
+            <label for="originalURL" class="sr-only">Original URL</label>
+            <input required placeholder="Enter URL" type="text" name="originalURL" id="originalURL"
+                class="form-control col mr-2">
+            <button class="btn btn-success" type="submit">Reduce</button>
+        </form>
+
+        <table class="table table-striped table-responsive">
+            <thead>
+                <tr>
+                    <th>Original URL</th>
+                    <th>Reduced URL</th>
+                    <th>Clicks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.algoexpert.io/product>">https://www.algoexpert.io/product</a></td>
+                    <td><a href="12345">12345</a></td>
+                    <td>10</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
